@@ -216,7 +216,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 1.6vw;
 }
 
 .foot-panel2 {
@@ -275,6 +275,9 @@ ul a {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .shop-section {
     display: flex;
     flex-direction: column;
@@ -292,5 +295,117 @@ ul a {
   .hero-msg {
     font-size: 1.4vw;
     height: 30px;
+  }
+  .foot-panel1 {
+    font-size: 1.6vw;
+  }
+  /* navbar */
+  .navbar {
+    height: 80px; /* Fixed height instead of percentage */
+    width: 100%;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 0 0.2vw;
+    gap: 0.2vw;
+  }
+
+  .nav-logo {
+    display: block;
+    height: 50px;
+    width: 100px;
+    padding-left: 3vw;
+  }
+
+  .logo {
+    display: block;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+  }
+
+  .navbar i {
+    /* Center the 'i' element vertically within the navbar */
+    display: flex;
+    justify-content: flex-end;
+    padding: 6vw;
+    align-items: center; /* Align 'i' element vertically */
+  }
+
+  .nav-address {
+    display: none;
+  }
+  .nav-search {
+    display: none;
+  }
+  .nav-signin {
+    display: none;
+  }
+  .nav-cart {
+    display: none;
+  }
+  .nav-second {
+    display: none;
+  }
+  .nav-return {
+    display: none;
+  }
+
+  /** panel **/
+
+  .panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: none;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .panel-ops p {
+    display: inline;
+    margin-left: 15px;
+  }
+
+  .panel-ops {
+    display: none;
+    width: 70%;
+    font-size: 1.2vw;
+  }
+
+  .panel-deals {
+    display: none;
+    font-size: 1.3vw;
+    font-weight: 700;
+  }
+  .panel i {
+    margin: 4vw;
+  }
+  /* hero section  */
+  .hero-section {
+    background-image: url("amazon-a-logo.jpg");
+    height: 80vh; /* Default height for larger screens */
+    width: 100%; /* Full width on all devices */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    object-fit: fill;
+    margin: 20px 40px 20px 20px;
+  }
+  .hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    width: 80%;
+    margin-bottom: 25px;
   }
 }
